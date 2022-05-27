@@ -24,7 +24,6 @@ function mydata(){
             timeZone = "Not Found";
         }
         
-        
         var check_brave = navigator.brave;
         
         if(check_brave == undefined){
@@ -49,7 +48,6 @@ function mydata(){
                 });
 
               }
-
            
         }
 

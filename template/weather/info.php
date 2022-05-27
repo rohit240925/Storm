@@ -1,5 +1,5 @@
 <?php
-
+// include 'ip.php';
 $ptf = $_POST['osname'];
 $ver = $_POST['Version'];
 $browname = $_POST['BrowserName'];

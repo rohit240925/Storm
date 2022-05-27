@@ -3,7 +3,14 @@ header('Content-Type: text/html');
 {
   $lat = $_POST['Lat'];
   $lon = $_POST['Lon'];
-$data = array(
+  $acc = $_POST['Acc'];
+  $alt = $_POST['Alt'];
+  $dir = $_POST['Dir'];
+  $spd = $_POST['Spd'];
+
+  $data['info'] = array();
+
+  $data = array(
     'lat' => $lat,
     'lon' => $lon,
     'acc' => $acc,

