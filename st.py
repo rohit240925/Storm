@@ -18,7 +18,7 @@ while True:
             handler.normal_data()
             
         elif original_menu == "1":
-            handler.nearyou_start()
+            handler.weather_start()
         
         elif original_menu == "2":
             handler.camera_temp_start()
